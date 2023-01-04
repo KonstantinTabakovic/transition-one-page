@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: repeating-linear-gradient(to right, #061233, #061233 40%, #5877B7 40%, #5877B7); /* Dark blue to light blue */
+    z-index: 96;
+}
+  
+  
+  .building-animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 98;
+  }
+  
+  .clouds-animation {
+    width: 66%;
+    position: absolute;
+    top: 18%;
+    left: 22%;
+    z-index: 97;
+    transition: transform 0.5s;
+  }
+  #inner {
+    opacity: 1;
+  }
+  nav {
+    background-color: transparent;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    width: 100%;
+    position: fixed;
+    top: 6%;
+    left: -9%;
+    right: 0;
+    z-index: 99;
+    font-family: "Titillium Web",sans-serif,sans-serif;
+  }
+  nav img {
+    margin-left: 15%;
+    max-width: 23%;
+    height: auto;
+    border-right: 2px solid #333844;
+    padding: 40px;
+  }
+  
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+  }
+  
+  nav li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px 0 40px;
+  }
+  
+  
+  
+  h1 {
+    text-align: left;
+    color: white;
+    z-index: 99;
+    font-family: 'Martel', sans-serif;
+    font-weight: 200;
+    font-size: 74px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 115%;
+  }
+  h1:after {
+    border-bottom: 2px solid #5c86da;
+    content: '';
+    display: block;
+    padding-bottom: 40px;
+    width: 30%;
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+
+  .black__track__wrap h3{
+    display: inline-block;
+    z-index: 98;
+    text-align: left;
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+    font-family: 'Martel', sans-serif;
+  }
+  
+  .black__track__wrap i {
+    display: inline-block;
+    z-index: 98;
+    text-align: left;
+    color: #203f92;
+    position: absolute;
+    bottom: 15%;
+    left: 110%;
+    font-size: 40px;
+    border: 2px solid #203f92;
+    border-radius: 50%;
+    padding-left: 7px;
+    padding-right: 7px;
+    transition: bottom 0.5s;
+  }
+  .black__track__wrap i:hover {
+    bottom: 10%;  /* On hover, move the element up by 5% */
+  }
+  
+  .black__track {
+    display: inline-block;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(to right,rgba(4,12,39,.5) 10%,rgba(0,0,0,0) 60%);
+    z-index: 99;
+    position: absolute;
+    bottom: 0%;
+  }
