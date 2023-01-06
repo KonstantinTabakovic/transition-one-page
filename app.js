@@ -26,3 +26,5 @@ document.addEventListener("mousemove", (event) => {
   previousX = x;
   previousY = y;
 });
+
+

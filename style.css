@@ -71,7 +71,7 @@ html, body {
     display: block;
     color: #fff;
     text-decoration: none;
-    padding: 0 10px 0 40px;
+    padding: 0 10px 0 30px;
   }
   
   
@@ -95,7 +95,7 @@ html, body {
     padding-bottom: 40px;
     width: 30%;
   }
-  .container {
+  .container1 {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -116,7 +116,7 @@ html, body {
   
   .black__track__wrap i {
     display: inline-block;
-    z-index: 98;
+    z-index: 99;
     text-align: left;
     color: #203f92;
     position: absolute;
@@ -141,4 +141,235 @@ html, body {
     z-index: 99;
     position: absolute;
     bottom: 0%;
+  }
+
+ 
+  
+  /* HAMBURGER */
+  .container{
+    display: none;
+  }
+  h2{
+    display: none;
+  }
+  
+  @media (max-width: 800px) {
+    h2{
+      display: block;
+      color: white;
+      z-index: 998;
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      border-bottom: 2px solid #5976c5;
+    }
+    .container1{
+      display: none;
+    }
+    .menu-container{
+      display: none;
+    }
+    .container {
+      display: block;
+      width: 66%;
+      position: absolute;
+      top: -13%;
+      left: 40%;
+      z-index: 9999;
+  }
+  
+  .container h1 {
+      margin-bottom: 2rem;
+  }
+  
+  .menu-items {
+      text-align: center;
+      position: absolute;
+      padding: 11rem;
+      margin-top: -6rem;
+      margin-left: -1rem;
+      top: 11.5rem;
+      left: -11rem;
+      list-style: none;
+      opacity: 0;
+      font-size: 2rem;
+      border: 4px solid #203f92;
+      background-color: #203f92;
+      border-radius: 0.25em;
+      transform: translateX(-10%);
+      transition: transform 100ms ease-in-out, opacity 200ms;
+  }
+  
+  .menu-items li{
+      color: white;
+      padding: 0.5rem;
+  }
+  
+  .menu-items li a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .menu-items li a:hover{
+      color: rgb(174, 174, 174);
+  }
+  
+  .check {
+      position: absolute;
+      top: 8rem;
+      left: 8rem;
+      height: 3rem;
+      width: 3rem;
+      opacity: 0;
+      z-index: 3;
+  }
+  
+  .check:hover {
+      cursor: pointer;
+  }
+  
+  .check:checked~.menu-items {
+      display: block;
+      transform: translateX(0%);
+      opacity: 1;
+  }
+  
+  .ham-menu {
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: 9rem;
+      left: 9.5rem;
+      padding: 0.5rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: transparent;
+      border-radius: 0.25em;
+  }
+  
+  .ham-menu .line {
+      background-color: white;
+      border-radius: 1em;
+      width: 2rem;
+      height: 0.25rem;
+  }
+  
+  .ham-menu .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 100ms ease-in-out;
+  }
+  
+  .ham-menu .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 100ms ease-in-out;
+  }
+  
+  .check:checked~.ham-menu .line1 {
+      display: block;
+      transform: rotate(45deg);
+  }
+  
+  .check:checked~.ham-menu .line2 {
+      opacity: 0;
+  }
+  
+  .check:checked~.ham-menu .line3 {
+      display: block;
+      transform: rotate(-45deg);
+  }
+
+  nav img {
+    margin-left: 10%;
+    max-width: 40%;
+    height: auto;
+    border-right: 2px solid #333844;
+    padding: 60px;
+  }
+
+
+  .building-animation {
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 98;
+  }
+  
+  .clouds-animation {
+    width: 86%;
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    z-index: 97;
+    transition: transform 0.5s;
+  }
+  }
+  
+  @media (max-width: 1200px){
+    nav {
+      background-color: transparent;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      width: 80%;
+      position: fixed;
+      top: 6%;
+      left: -9%;
+      right: 0;
+      z-index: 99;
+      font-family: "Titillium Web",sans-serif,sans-serif;
+    }
+    nav img {
+      margin-left: 15%;
+      max-width: 23%;
+      height: auto;
+      border-right: 2px solid #333844;
+      padding: 40px;
+    }
+    
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-right: 0px;
+    }
+    
+    nav li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 10px 0 10px;
+    }
+    h1 {
+      text-align: left;
+      color: white;
+      z-index: 99;
+      font-family: 'Martel', sans-serif;
+      font-weight: 200;
+      font-size: 54px;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 115%;
+    }
+    h1:after {
+      border-bottom: 2px solid #5c86da;
+      content: '';
+      display: block;
+      padding-bottom: 40px;
+      width: 30%;
+    }
   }
